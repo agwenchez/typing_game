@@ -35,12 +35,12 @@ function spellChecker (){
     let originTextMatch = originText.substring(0, textEntered.length)
 
     if(textEntered == originText){
-        testWrapper.style.borderColor = "#429890";
+        testWrapper.style.borderColor = "green";
     }else{
         if(textEntered == originTextMatch){
-            testWrapper.style.borderColor = "#65CCf3";
+            testWrapper.style.borderColor = "#f4853c";
         }else{
-            testWrapper.style.borderColor = "#E95D0F";
+            testWrapper.style.borderColor = "red";
         }
     }
 
