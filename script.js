@@ -9,6 +9,9 @@ const theTimer = document.querySelector(".timer");
 
 
 // Run a standard minute/second/hundredths timer:
+function runTimer(){
+    
+}
 
 
 // Match the text entered with the provided text on the page:
@@ -20,6 +23,10 @@ function spellChecker (){
 // Start the timer:
 function start (){
    let textEnteredLength = testArea.value.length;
+
+   if(textEnteredLength === 0){
+       setInterval(runTimer, 10)
+   }
     console.log(textEnteredLength)
 } 
 
